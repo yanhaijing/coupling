@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非直接耦合</title>
+    <link rel="stylesheet" href="../css/comm.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>非直接耦合</h1>
+            <p>
+                两个模块之间没有直接关系，它们之间的联系完全是通过主模块的控制和调用来实现的。耦合度最弱，模块独立性最强。
+            </p>
+        </header>
+        <div class="m1">
+            <h3>m1</h3>
+            <label for="">m1输入：<input type="text"></label>
+            <p>m2输入：<span></span></p>
+        </div>
+        <div class="m2">
+            <h3>m2</h3>
+            <label for="">m2输入：<input type="text"></label>
+            <p>m1输入：<span></span></p>
+        </div>
+    </div>
+    
+    <script src="m1.js"></script>
+    <script src="m2.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
